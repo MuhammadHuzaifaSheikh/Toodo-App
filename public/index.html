@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toodo</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBCfj7rC7OJ0V90lceXMC1Esg9no3FZ5Bc",
+            authDomain: "toodo-app.firebaseapp.com",
+            databaseURL: "https://toodo-app.firebaseio.com",
+            projectId: "toodo-app",
+            storageBucket: "toodo-app.appspot.com",
+            messagingSenderId: "878197683836",
+            appId: "1:878197683836:web:ed824810a8d502e816fbf9",
+            measurementId: "G-GDR62B0GRE"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+
+</head>
+<body>
+<input id="text" type="text"><button onclick="addToodo()">Add</button>
+<ul id="list">
+
+</ul>
+<script src="app.js"></script>
+</body>
+</html>
